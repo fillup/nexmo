@@ -1,0 +1,22 @@
+{
+  "name": "fillup/nexmo",
+  "description": "Nexmo API client built with Guzzle Web Service descriptions",
+  "require": {
+    "guzzlehttp/guzzle": "~5.0",
+    "guzzlehttp/guzzle-services": "*",
+    "guzzlehttp/retry-subscriber": "*",
+    "guzzlehttp/log-subscriber": "*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Phillip Shipley",
+      "email": "phillip.shipley@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nexmo\\": "src/"
+    }
+  }
+}

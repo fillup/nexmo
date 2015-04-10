@@ -7,6 +7,9 @@ use Nexmo\BaseClient;
  * Nexmo SMS API Client implemented with Guzzle Web Service
  *
  * @method array send(array $config = [])
+ * @method array searchMessage(array $config = [])
+ * @method array searchMessages(array $config = [])
+ * @method array searchRejections(array $config = [])
  */
 class Sms extends BaseClient
 {
@@ -19,12 +22,7 @@ class Sms extends BaseClient
         $config += [
             'description_path' => __DIR__ . '/descriptions/Sms.php',
         ];
-
-        // Create the Smartsheet client.
-        parent::__construct(
-            $config
-        );
-
+        // Create the Sms client.
+        parent::__construct($config);
     }
-
 }

@@ -83,9 +83,99 @@
                 ],
             ]
         ],
+        'SearchMessage' => [
+            'httpMethod' => 'GET',
+            'uri' => '/search/message',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'api_key' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'api_secret' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'id' => [
+                    'required' => true,
+                    'type'     => 'string',
+                    'location' => 'query',
+                ],
+            ]
+        ],
+        'SearchMessages' => [
+            'httpMethod' => 'GET',
+            'uri' => '/search/messages',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'api_key' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'api_secret' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'ids' => [
+                    'required' => false,
+                    'type'     => 'array',
+                    'location' => 'query',
+                ],
+                'date' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'query'
+                ],
+                'to' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'query'
+                ],
+            ]
+        ],
+        'SearchRejections' => [
+            'httpMethod' => 'GET',
+            'uri' => '/search/messages',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'api_key' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'api_secret' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query',
+                ],
+                'date' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'query'
+                ],
+                'to' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'query'
+                ],
+            ]
+        ],
     ],
     'models' => [
         'SendResult' => [
+            'type' => 'object',
+            'properties' => [
+                'statusCode' => ['location' => 'statusCode']
+            ],
+            'additionalProperties' => [
+                'location' => 'json'
+            ]
+        ],
+        'Result' => [
             'type' => 'object',
             'properties' => [
                 'statusCode' => ['location' => 'statusCode']

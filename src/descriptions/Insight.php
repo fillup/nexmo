@@ -35,16 +35,20 @@
                     'required' => false,
                     'type' => 'int',
                     'location' => 'json',
+                    'minimum' => 1000,
+                    'maximum' => 30000,
                 ],
                 'callback_method' => [
                     'required' => false,
                     'type' => 'string',
                     'location' => 'json',
+                    'enum' => ['GET','POST'],
                 ],
                 'client_ref' => [
                     'required' => false,
                     'type' => 'string',
                     'location' => 'json',
+                    'maxLength' => 40,
                 ],
             ]
         ],

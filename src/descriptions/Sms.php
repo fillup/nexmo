@@ -30,6 +30,10 @@
                     'required' => false,
                     'type' => 'string',
                     'location' => 'json',
+                    'enum' => [
+                        'text','binary','wappush',
+                        'unicode','vcal','vcard',
+                    ]
                 ],
                 'text' => [
                     'required' => false,
@@ -40,11 +44,13 @@
                     'required' => false,
                     'type' => 'int',
                     'location' => 'json',
+                    'maximum' => 1,
                 ],
                 'client-ref' => [
                     'required' => false,
                     'type' => 'string',
                     'location' => 'json',
+                    'maxLength' => 40,
                 ],
                 'network-code' => [
                     'required' => false,

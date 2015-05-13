@@ -1,5 +1,5 @@
 <?php return [
-    'baseUrl' => 'https://rest.nexmo.com',
+    'baseUrl' => 'https://api.nexmo.com',
     'operations' => [
         'Verify' => [
             // Documentation: https://docs.nexmo.com/index.php/verify/verify

@@ -1,5 +1,5 @@
 <?php return [
-    'baseUrl' => 'https://rest.nexmo.com',
+    'baseUrl' => 'https://api.nexmo.com',
     'operations' => [
         'Verify' => [
             // Documentation: https://docs.nexmo.com/index.php/verify/verify
@@ -82,12 +82,12 @@
                 'api_key' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'query',
+                    'location' => 'json',
                 ],
                 'api_secret' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'query',
+                    'location' => 'json',
                 ],
                 'request_id' => [
                     'required' => true,

@@ -115,12 +115,12 @@
                 'api_key' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'query',
+                    'location' => 'json',
                 ],
                 'api_secret' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'query',
+                    'location' => 'json',
                 ],
                 'request_id' => [
                     'required' => false,

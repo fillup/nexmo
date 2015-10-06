@@ -52,6 +52,62 @@
                 ],
             ]
         ],
+        'Standard' => [
+            'httpMethod' => 'POST',
+            'uri' => 'https://api.nexmo.com/number/lookup/json',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'api_key' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'json',
+                ],
+                'api_secret' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'json',
+                ],
+                'number' => [
+                    'required' => true,
+                    'type'     => 'string',
+                    'location' => 'json',
+                ],
+                'country' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json',
+                    'maxLength' => 40,
+                ],
+            ]
+        ],
+        'Basic' => [
+            'httpMethod' => 'POST',
+            'uri' => 'https://api.nexmo.com/number/lookup/json',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'api_key' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'json',
+                ],
+                'api_secret' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'json',
+                ],
+                'number' => [
+                    'required' => true,
+                    'type'     => 'string',
+                    'location' => 'json',
+                ],
+                'country' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json',
+                    'maxLength' => 40,
+                ],
+            ]
+        ],
     ],
     'models' => [
         'Result' => [

@@ -211,25 +211,25 @@
                 'api_key' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
                 'api_secret' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
                 'country' => [
                     // Options: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                     'minLength' => 2,
                     'maxLength' => 2,
                 ],
                 'msisdn' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
             ],
         ],
@@ -242,25 +242,25 @@
                 'api_key' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
                 'api_secret' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
                 'country' => [
                     // Options: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                     'minLength' => 2,
                     'maxLength' => 2,
                 ],
                 'msisdn' => [
                     'required' => true,
                     'type' => 'string',
-                    'location' => 'json',
+                    'location' => 'query',
                 ],
             ],
         ],

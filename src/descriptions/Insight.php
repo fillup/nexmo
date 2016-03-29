@@ -33,7 +33,7 @@
                 ],
                 'callback_timeout' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 1000,
                     'maximum' => 30000,

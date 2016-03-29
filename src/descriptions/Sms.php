@@ -42,7 +42,7 @@
                 ],
                 'status-report-req' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'maximum' => 1,
                 ],
@@ -69,12 +69,12 @@
                 ],
                 'ttl' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                 ],
                 'message-class' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                 ],
                 'udh' => [

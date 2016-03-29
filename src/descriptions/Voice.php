@@ -35,7 +35,7 @@
                 ],
                 'machine_timeout' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                 ],
                 'answer_url' => [
@@ -67,7 +67,7 @@
                 ],
                 'status_method' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'enum' => ['GET','POST'],
                 ],
@@ -125,7 +125,7 @@
                 ],
                 'repeat' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 1,
                     'maximum' => 10,
@@ -137,7 +137,7 @@
                 ],
                 'machine_timeout' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 400,
                     'maximum' => 10000,
@@ -207,7 +207,7 @@
                 ],
                 'repeat' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 1,
                     'maximum' => 10,
@@ -219,7 +219,7 @@
                 ],
                 'machine_timeout' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 400,
                     'maximum' => 10000,
@@ -237,7 +237,7 @@
                 ],
                 'max_digits' => [
                     'required' => true,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 1,
                     'maximum' => 16,
@@ -307,14 +307,14 @@
                 ],
                 'max_digits' => [
                     'required' => true,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 1,
                     'maximum' => 16,
                 ],
                 'pin_code' => [
                     'required' => true,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                 ],
                 'bye_text' => [

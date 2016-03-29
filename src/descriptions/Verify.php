@@ -35,7 +35,7 @@
                 ],
                 'code_length' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                 ],
                 'lg' => [
@@ -59,14 +59,14 @@
                 ],
                 'pin_expiry' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 60,
                     'maximum' => 3600,
                 ],
                 'next_event_wait' => [
                     'required' => false,
-                    'type' => 'int',
+                    'type' => 'integer',
                     'location' => 'json',
                     'minimum' => 60,
                     'maximum' => 900,

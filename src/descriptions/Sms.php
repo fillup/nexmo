@@ -87,6 +87,11 @@
                     'type' => 'string',
                     'location' => 'json',
                 ],
+                'callback' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json'
+                ],
             ]
         ],
         'SearchMessage' => [

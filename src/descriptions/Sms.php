@@ -52,11 +52,6 @@
                     'location' => 'json',
                     'maxLength' => 40,
                 ],
-                'network-code' => [
-                    'required' => false,
-                    'type' => 'string',
-                    'location' => 'json',
-                ],
                 'vcard' => [
                     'required' => false,
                     'type' => 'string',
@@ -72,6 +67,11 @@
                     'type' => 'integer',
                     'location' => 'json',
                 ],
+                'callback' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json'
+                ],
                 'message-class' => [
                     'required' => false,
                     'type' => 'integer',
@@ -82,20 +82,15 @@
                     'type' => 'string',
                     'location' => 'json',
                 ],
-                'body' => [
-                    'required' => false,
-                    'type' => 'string',
-                    'location' => 'json',
-                ],
-                'callback' => [
-                    'required' => false,
-                    'type' => 'string',
-                    'location' => 'json'
-                ],
                 'protocol-id' => [
                     'required' => false,
                     'type' => 'integer',
                     'location' => 'json'
+                ],
+                'body' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json',
                 ],
                 'title' => [
                     'required' => false,
@@ -111,6 +106,11 @@
                     'required' => false,
                     'type' => 'integer',
                     'location' => 'json'
+                ],
+                'network-code' => [ // TODO: It seems that this parameter shouldn't be here: https://github.com/fillup/nexmo/issues/12
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json',
                 ],
             ]
         ],

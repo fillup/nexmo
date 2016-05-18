@@ -92,6 +92,26 @@
                     'type' => 'string',
                     'location' => 'json'
                 ],
+                'protocol-id' => [
+                    'required' => false,
+                    'type' => 'integer',
+                    'location' => 'json'
+                ],
+                'title' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json'
+                ],
+                'url' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'json'
+                ],
+                'validity' => [
+                    'required' => false,
+                    'type' => 'integer',
+                    'location' => 'json'
+                ],
             ]
         ],
         'SearchMessage' => [

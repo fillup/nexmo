@@ -107,11 +107,6 @@
                     'type' => 'integer',
                     'location' => 'json'
                 ],
-                'network-code' => [ // TODO: It seems that this parameter shouldn't be here: https://github.com/fillup/nexmo/issues/12
-                    'required' => false,
-                    'type' => 'string',
-                    'location' => 'json',
-                ],
             ]
         ],
         'SearchMessage' => [

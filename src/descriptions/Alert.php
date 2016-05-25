@@ -47,12 +47,12 @@ return [
                     'enum' => [
                         'text', 'unicode'
                     ]
-                ],
-                'additionalParameters' => [
-                    'required' => false,
-                    'type' => 'string',
-                    'location' => 'json',
                 ]
+            ],
+            'additionalParameters' => [
+                'required' => false,
+                'type' => 'string',
+                'location' => 'json',
             ]
         ]
     ],

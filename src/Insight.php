@@ -7,6 +7,8 @@ use Nexmo\BaseClient;
  * Nexmo Insight API Client implemented with Guzzle Web Service
  *
  * @method array request(array $config = [])
+ * @method array standard(array $config = [])
+ * @method array basic(array $config = [])
  */
 class Insight extends BaseClient
 {

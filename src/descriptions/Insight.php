@@ -82,7 +82,7 @@
         ],
         'Basic' => [
             'httpMethod' => 'POST',
-            'uri' => 'https://api.nexmo.com/number/lookup/json',
+            'uri' => 'https://api.nexmo.com/ni/basic/json',
             'responseModel' => 'Result',
             'parameters' => [
                 'api_key' => [

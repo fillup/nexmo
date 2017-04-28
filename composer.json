@@ -2,10 +2,7 @@
   "name": "fillup/nexmo",
   "description": "Nexmo API client built with Guzzle Web Service descriptions",
   "require": {
-    "guzzlehttp/guzzle": "~5.0",
-    "guzzlehttp/guzzle-services": "*",
-    "guzzlehttp/retry-subscriber": "*",
-    "guzzlehttp/log-subscriber": "*"
+    "guzzlehttp/guzzle-services": "^1.1"
   },
   "license": "MIT",
   "authors": [

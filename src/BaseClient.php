@@ -4,7 +4,6 @@ namespace Nexmo;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 use GuzzleHttp\Command\Guzzle\Description;
-use GuzzleHttp\Subscriber\Retry\RetrySubscriber;
 
 /**
  * Base client sets up common settings, should be extended by
@@ -17,15 +16,13 @@ class BaseClient extends GuzzleClient
      */
     public function __construct(array $config = [])
     {
-        // Apply some defaults.
-        $config += [
-            'max_retries'      => 3,
-        ];
-
-        // Create the Smartsheet client.
+        // Create the Nexmo client.
         parent::__construct(
             $this->getHttpClientFromConfig($config),
             $this->getDescriptionFromConfig($config),
+            null,
+            null,
+            null,
             $config
         );
 
@@ -45,15 +42,6 @@ class BaseClient extends GuzzleClient
             ? $config['http_client_options']
             : [];
         $client = new HttpClient($clientOptions);
-
-        // Attach request retry logic.
-        $client->getEmitter()->attach(new RetrySubscriber([
-            'max' => $config['max_retries'],
-            'filter' => RetrySubscriber::createChainFilter([
-                RetrySubscriber::createStatusFilter(),
-                RetrySubscriber::createCurlFilter(),
-            ]),
-        ]));
 
         return $client;
     }
@@ -94,14 +82,11 @@ class BaseClient extends GuzzleClient
 
         // Set credentials in default variables so that we don't
         // have to pass them to every method individually
-        $this->setConfig(
-            'defaults/api_key',
-            $config['api_key']
-        );
-        $this->setConfig(
-            'defaults/api_secret',
-            $config['api_secret']
-        );
-
+        $defaultsConfig = $this->getConfig('defaults');
+        $defaultsConfig += [
+            'api_key' => $config['api_key'],
+            'api_secret' => $config['api_secret']
+        ];
+        $this->setConfig('defaults', $defaultsConfig);
     }
 }
